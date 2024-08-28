@@ -1,0 +1,20 @@
+export const industryTypes=[{id:1,title:"Consumer & Industrial Products"},
+{id:2,title:"Energy & Resources"},
+{id:3,title:"Financial Services"},
+{id:4,title:"Life Sciences & Health Care"},
+{id:5,title:"Public Sector"},
+{id:6,title:"Technology, Media & Telecommunication"},
+]
+export const industrySectors=[{id:1,title:"Automotive"},
+ {id:2,title:"Chemicals & Speciality Materials"},
+ {id:3,title:"Consumer Products"},
+ {id:4,title:"Industrial Products & Services"},
+ {id:5,title:"Retail, Wholesale & Distribution"},
+ {id:6,title:"Travel , Hospitality & Services"},
+ ]
+export const revenueRange=[{id:1,title:"\u003c 10 Million"},
+ {id:2,title:"10 – 100 Million"},
+ {id:3,title:"100 Million – 1 Billion"},
+ {id:4,title:"1 – 10 Billion"},
+ {id:5,title:"\u003e 10 Billion"},
+ ] 
