@@ -21,7 +21,7 @@ export default function Step3Result({onNext,formData}) {
    fetchData()
   },[])
 
-  const fetchData=async()=>{
+  async function fetchData(){
     try{
     //   const data= await fetch("http://localhost:8000/swot_ai_content/9baac8ff-f640-4f6a-96f2-7773365d490b");
     // const jsonData=await data.json();
