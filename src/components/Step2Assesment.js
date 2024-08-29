@@ -18,6 +18,9 @@ const [isStreaming,setIsStreaming]=useState(true);
  const [sources,SetSources]=useState([]);
 
 
+ useEffect(()=>{
+  fetchData()
+},[])
  const formatData=(inputData)=>{
   const content = inputData.data;
 
@@ -52,7 +55,7 @@ console.log('SWOT Analysis:', swotData);
   }
   return [];
 }
- const fetchData=async()=>{
+ async function fetchData(){
   try{
   //   const data= await fetch("http://localhost:8000/swot_ai_content/9baac8ff-f640-4f6a-96f2-7773365d490b");
   // const jsonData=await data.json();
@@ -118,9 +121,7 @@ console.log('SWOT Analysis:', swotData);
   console.error('Error fetching data:', error);
  }
  }
-  useEffect(()=>{
-    fetchData()
-  },[])
+ 
   return (
     <div >
       {swot.length>0?
