@@ -9,6 +9,10 @@ export default function Step3Result({onNext,formData}) {
   const [isStreaming,setIsStreaming]=useState(true);
 
   let content="";
+
+  useEffect(()=>{
+    fetchData()
+   },[])
   const formatData=(inputData)=>{
   const rec=inputData.split('\n');
   const s=rec.splice(0,1)[0];
@@ -17,9 +21,7 @@ export default function Step3Result({onNext,formData}) {
   setRecommendations(rec.filter((item)=>item.length!=0));
 
   }
-  useEffect(()=>{
-   fetchData()
-  },[])
+  
 
   async function fetchData(){
     try{
